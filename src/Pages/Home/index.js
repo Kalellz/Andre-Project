@@ -1,6 +1,7 @@
 import Header from "../../Components/Header/Index";
 import Card from "../../Assets/WhiteDiv.svg";
 import Rio from "../../Assets/RioDeJaneiro.jpg";
+import França from "../../Assets/frança.jpg";
 import Stars from "../../Assets/stars.svg";
 import "./index.scss";
 import { useNavigate } from "react-router-dom";
@@ -87,7 +88,7 @@ function App() {
                   e pelo Pão de Açúcar, um pico de granito com teleféricos até
                   seu cume. A cidade também é conhecida pelas grandes favelas.
                 </p>
-                <h1>R$ 15.600,00</h1>
+                <h1>R$ 1.600,00</h1>
                 <div class="main_div">
                   <button>Comprar</button>
                 </div>
@@ -100,10 +101,10 @@ function App() {
           <img className="BackGround-Home-Main-Card" src={Card} />
           <div className="Home-Main-Card-Content">
             <div className="Home-Main-Card-Content-Image">
-              <img src={Rio} />
+              <img src={França} />
             </div>
             <div className="Home-Main-Card-Content-Texts">
-              <h1>Rio De Janeiro</h1>
+              <h1>França</h1>
               <div className="Home-Main-Card-Content-Description">
                 <div>
                   <img src={Stars} />
@@ -113,13 +114,9 @@ function App() {
                   <img src={Stars} />
                 </div>
                 <p>
-                  O Rio de Janeiro é uma grande cidade brasileira à beira-mar,
-                  famosa pelas praias de Copacabana e Ipanema, pela estátua de
-                  38 metros de altura do Cristo Redentor, no topo do Corcovado,
-                  e pelo Pão de Açúcar, um pico de granito com teleféricos até
-                  seu cume. A cidade também é conhecida pelas grandes favelas.
+                A França, na Europa Ocidental, tem cidades medievais, aldeias alpinas e praias mediterrâneas. Paris, sua capital, é famosa pelas casas de alta costura, museus de arte clássica, como o Louvre, e monumentos como a Torre Eiffel.
                 </p>
-                <h1>R$ 15.600,00</h1>
+                <h1>R$ 7.600,00</h1>
                 <div class="main_div">
                   <button>Comprar</button>
                 </div>
