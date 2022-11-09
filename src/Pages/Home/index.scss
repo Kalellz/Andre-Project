@@ -156,7 +156,7 @@ body::-webkit-scrollbar-thumb {
           }
 
           .main_div button {
-            padding: 0.7em 2em;
+            padding: 0.7em 25%;
             font-size: 16px;
             background: #222222;
             color: #fff;
@@ -186,6 +186,173 @@ body::-webkit-scrollbar-thumb {
     }
     a:hover {
       color: #ed0842;
+    }
+  }
+}
+@media screen and (max-width: 1480px) {
+  .Home-Main {
+    overflow: hidden;
+    background-color: #121212;
+    height: 100%;
+    .Home-Main-Content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 85vh;
+      h1 {
+        font-size: 5em;
+        color: #ed0842;
+      }
+      p {
+        text-align: center;
+        width: 35%;
+        color: #fff;
+      }
+      .Home-Main-Button {
+        width: 30%;
+        justify-content: space-around;
+        display: flex;
+        margin-top: 1em;
+        button {
+          cursor: pointer;
+          font-weight: 700;
+          font-family: Helvetica, "sans-serif";
+          transition: all 0.5s;
+          padding: 5px 15px;
+          border-radius: 100px;
+          background: #ed0842;
+          border: 1px solid transparent;
+          display: flex;
+          align-items: center;
+          font-size: 15px;
+          color: #fff;
+        }
+  
+        button:hover {
+          transform: scale(1.05);
+          background: #c00735;
+        }
+  
+        button > svg {
+          filter: invert(100);
+          width: 34px;
+          margin-left: 10px;
+          transition: transform 0.3s ease-in-out;
+        }
+  
+        button:hover svg {
+          transform: translateX(5px);
+        }
+  
+        button:active {
+          transform: scale(0.95);
+        }
+      }
+    }
+    .Home-Main-Cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+  
+      .Home-Main-Card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .BackGround-Home-Main-Card {
+          position: relative;
+          width: 70%;
+        }
+  
+        .Home-Main-Card-Content {
+          display: flex;
+          justify-content: space-around;
+          width: 65%;
+          position: absolute;
+          .Home-Main-Card-Content-Image {
+            margin-left: 1em;
+            width: 40vw;
+            height: 50vh;
+            img {
+              height: 100%;
+              width: 100%;
+            }
+          }
+          .Home-Main-Card-Content-Texts {
+            margin-left: 1em;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 50vh;
+            width: 50%;
+          }
+          .Home-Main-Card-Content-Description {
+            margin-left: 1em;
+            width: 90%;
+            margin-bottom: 40%;
+            img {
+              width: 5%;
+            }
+            .main_div {
+              width: 36%;
+              --color: #ed0842;
+              position: relative;
+              z-index: 1;
+            }
+  
+            .main_div::before {
+              content: "";
+              position: absolute;
+              width: 30px;
+              height: 30px;
+              background: transparent;
+              top: -7px;
+              left: -7px;
+              z-index: -5;
+              border-top: 3px solid var(--color);
+              border-left: 3px solid var(--color);
+              transition: 0.5s;
+            }
+  
+            .main_div::after {
+              content: "";
+              position: absolute;
+              width: 30px;
+              height: 30px;
+              background: transparent;
+              bottom: -7px;
+              right: -7px;
+              z-index: -5;
+              border-right: 3px solid var(--color);
+              border-bottom: 3px solid var(--color);
+              transition: 0.5s;
+            }
+  
+            .main_div:hover::before {
+              width: 100%;
+              height: 100%;
+            }
+  
+            .main_div:hover::after {
+              width: 100%;
+              height: 100%;
+            }
+  
+            .main_div button {
+              padding: 0.7em 2em;
+              font-size: 16px;
+              background: #222222;
+              color: #fff;
+              border: none;
+              cursor: pointer;
+              font-family: inherit;
+            }
+          }
+        }
+      }
     }
   }
 }
